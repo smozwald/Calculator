@@ -1,0 +1,89 @@
+:root {
+    --page-background: rgb(134,134,138);
+    --inputs: rgb(69,70,72);
+    --display:  rgb(255,244,197);
+    --operators: rgb(250,39,0);
+    --text-color: rgb(63,83,121);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace, sans-serif;
+}
+
+body {
+    background-color: var(--page-background);
+}
+
+#calculator {
+    margin: 2em;
+    position: relative;
+    left:40%;
+    height:25em;
+    width:20em;
+    background-color: var(--inputs);
+}
+
+#output {
+    height: 5em;
+    width: 100%;
+    background-color: var(--display);
+    color: var(--text-color);
+}
+
+#output div {
+    height: 50%;
+    width: 100%;
+}
+
+#top-line {
+    text-align: right;
+    padding: 0 1em;
+    position: relative;
+    top: 0.5em;
+    font-size: 1.4em;
+}
+
+#bottom-line {
+    display: inline-block;
+    width: 100%;
+    padding: 0 1em;
+    position: relative;
+    bottom: 0.8em;
+    font-size: 1.1em;
+}
+
+#symbol {
+    display: inline-block;
+    max-width: 5%;
+}
+#num2 {
+    width: 90%;
+    float: right;
+    text-align: right;
+}
+
+
+
+#inputs {
+    height:20em;
+    margin: 0;
+    width:100%;
+    background-color: var(--inputs);
+    line-height: 0;
+}
+
+.input {
+    width: 25%;
+    height: 25%;
+    border: 1px solid rgba(141, 129, 129, 0.8); 
+    background-color: var(--inputs);
+    display: inline-block;
+    text-align: center;
+    color: var(--display);
+    font-size: 1.4em;
+}
+
+.input:focus {
+    outline: none;
+}
